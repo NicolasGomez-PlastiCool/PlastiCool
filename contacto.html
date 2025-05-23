@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - PlastiCool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PlastiCool Ltda.</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="https://formsubmit.co/TU_CORREO@ejemplo.com" method="POST">
+        <label>Nombre:
+          <input type="text" name="nombre" required>
+        </label>
+        <label>RUT:
+          <input type="text" name="rut" required>
+        </label>
+        <label>Teléfono:
+          <input type="text" name="telefono" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Mensaje:
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+        <input type="hidden" name="_next" value="https://tuusuario.github.io/plasticool/agradecimiento.html">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PlastiCool Ltda.</p>
+  </footer>
+</body>
+</html>
