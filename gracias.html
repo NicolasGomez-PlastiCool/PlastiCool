@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gracias</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Gracias por tu mensaje</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    .boton {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .boton:hover {
+      background-color: #1e6b47;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>¡Gracias por tu mensaje!</h1>
-  </header>
-
-  <main>
-    <p>Nos pondremos en contacto contigo a la brevedad para responder tu consulta.</p>
-
-    <button onclick="location.href='index.html'">Ir al inicio</button>
-    <button onclick="location.href='contacto.html'">Volver al formulario</button>
-  </main>
+  <h1>¡Gracias por tu mensaje!</h1>
+  <p>Nos pondremos en contacto contigo a la brevedad.</p>
+  <a href="index.html" class="boton">Ir al inicio</a>
+  <a href="contacto.html" class="boton">Enviar otro mensaje</a>
 </body>
 </html>
