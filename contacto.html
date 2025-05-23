@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacto - PlastiCool</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>PlastiCool Ltda.</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+    <h1>Contacto</h1>
   </header>
 
   <main>
-    <section>
-      <h2>Formulario de contacto</h2>
-      <form action="https://formsubmit.co/TU_CORREO@ejemplo.com" method="POST">
-        <label>Nombre:
-          <input type="text" name="nombre" required>
-        </label>
-        <label>RUT:
-          <input type="text" name="rut" required>
-        </label>
-        <label>Teléfono:
-          <input type="text" name="telefono" required>
-        </label>
-        <label>Email:
-          <input type="email" name="email" required>
-        </label>
-        <label>Mensaje:
-          <textarea name="mensaje" rows="5" required></textarea>
-        </label>
-        <input type="hidden" name="_next" value="https://tuusuario.github.io/plasticool/agradecimiento.html">
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-  <footer>
-    <p>&copy; 2025 PlastiCool Ltda.</p>
-  </footer>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <!-- Redirección a página de gracias -->
+      <input type="hidden" name="_next" value="https://nicolasgomez-plasticool.github.io/PlastiCool/gracias.html">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
 </body>
 </html>
