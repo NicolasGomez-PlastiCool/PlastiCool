@@ -9,15 +9,13 @@
 <body>
   <header>
     <h1>Contacto</h1>
-    <!-- Botón de regreso al índice -->
     <a href="index.html" style="text-decoration: none;">
       <button style="margin-top: 10px; padding: 8px 16px; font-size: 20px;">Volver al inicio</button>
     </a>
   </header>
 
   <main>
-    <form action="https://formspree.io/f/xzzrqlev" method="POST">
-      <!-- Redirección personalizada -->
+    <form action="https://formspree.io/f/xzzrqlev" method="POST" onsubmit="localStorage.setItem('formEnviado', 'true')">
       <input type="hidden" name="_redirect" value="https://nicolasgomez-plasticool.github.io/PlastiCool/gracias.html">
 
       <label for="nombre">Nombre:</label>
@@ -36,10 +34,11 @@
     </form>
   </main>
 
-  <!-- Script para redirigir si viene desde la URL de Formspree -->
+  <!-- Redirección manual si el formulario fue enviado -->
   <script>
-    if (window.location.href.includes("https://formspree.io/thanks?language=es")) {
-      window.location.href = "https://nicolasgomez-plasticool.github.io/PlastiCool/gracias.html";
+    if (localStorage.getItem('formEnviado') === 'true') {
+      localStorage.removeItem('formEnviado');
+      window.location.href = 'https://nicolasgomez-plasticool.github.io/PlastiCool/gracias.html';
     }
   </script>
 </body>
