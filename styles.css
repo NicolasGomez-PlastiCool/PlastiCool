@@ -1,51 +1,18 @@
-/* NUEVO HEADER FIJO */
-.header-fijo {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #e3c3a0; /* Latte - Canva */
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Para que el contenido no se esconda detrás del header */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-top: 100px; /* Ajuste para header fijo */
+  padding: 0;
   line-height: 1.6;
   background-color: #f9f9f9;
 }
 
-/* Imagen del logo */
-.logo-container {
-  flex: 1;
-}
-.logo {
-  max-width: 100%;
-  height: auto;
-  max-height: 70px;
+header {
+  background-color: #00897b;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Texto del header */
-.texto-header {
-  flex: 3;
-  text-align: left;
-}
-.texto-header h1 {
-  margin: 0;
-  font-size: 1.8em;
-}
-.texto-header p {
-  margin: 0;
-  font-size: 1em;
-  color: #333;
-}
-
-/* Otros estilos existentes */
 nav a {
   margin: 0 10px;
   color: white;
@@ -93,70 +60,4 @@ footer {
   background-color: #eee;
   text-align: center;
   padding: 10px;
-}
-/* HEADER FIJO COMPLETO */
-.header-fijo {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #e3c3a0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Contenedor del logo */
-.logo-container {
-  flex: 1;
-}
-.logo {
-  max-width: 100%;
-  height: auto;
-  max-height: 70px;
-}
-
-/* Texto del header */
-.texto-header {
-  flex: 3;
-  text-align: center;
-}
-.texto-header h1 {
-  margin: 0;
-  font-size: 1.8em;
-}
-.texto-header p {
-  margin: 0;
-  font-size: 1em;
-  color: #333;
-}
-
-/* Botones de navegación */
-.botones-header {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-.boton-header {
-  background-color: #00897b;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 1em;
-}
-.boton-header:hover {
-  background-color: #00695c;
-}
-
-/* Espacio para que el main no quede debajo del header */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding-top: 120px;
-  line-height: 1.6;
-  background-color: #f9f9f9;
 }
