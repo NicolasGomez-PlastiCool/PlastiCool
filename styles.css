@@ -38,12 +38,14 @@ body {
   margin: 0;                              /* Elimina margen por defecto del título */
   font-size: 2.5em;                       /* Tamaño del texto (relativo al body) */
   color: #333;                            /* Color gris oscuro del texto */
+  text-align: center;
 }
 
 .contenido-header p {
   margin: 5px 0;                          /* Margen arriba/abajo, 0 a los lados */
   font-size: 1.2 em;                      /* Tamaño fuente */
   color: #333;                            /* Gris oscuro */
+  text-align: center;
 }
 
 nav a {
