@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,29 +7,65 @@ body {
   background-color: #f9f9f9;
 }
 
-header {
-  background-color: #00897b;
-  color: white;
-  padding: 20px;
-  text-align: center;
+/* HEADER con logo a la izquierda y color latte */
+.header-fijo {
+  background-color: #e3c3a0; /* Latte - Canva */
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del logo */
+.logo-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.logo {
+  max-height: 70px;
+  height: auto;
+  width: auto;
+}
+
+/* Contenedor del texto y menú */
+.contenido-header {
+  flex: 1;
+  text-align: left;
+}
+
+.contenido-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.contenido-header p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #333;
 }
 
 nav a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
+/* MAIN */
 main {
   padding: 20px;
 }
 
+/* GALERÍA */
 .galeria img {
   width: 30%;
   margin: 10px;
   border-radius: 10px;
 }
 
+/* FORMULARIO */
 form {
   display: flex;
   flex-direction: column;
@@ -56,6 +93,7 @@ button {
   font-size: 1em;
 }
 
+/* FOOTER */
 footer {
   background-color: #eee;
   text-align: center;
