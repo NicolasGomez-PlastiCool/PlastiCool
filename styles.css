@@ -9,7 +9,7 @@ body {
 
 /* HEADER con logo a la izquierda y color latte */
 .header-fijo {
-  background-color: #e3c3a0;              /* Color de fondo tipo latte desde Canva */
+  background-color: #f3e9dc;              /* Color de fondo tipo latte desde Canva */
   display: flex;                          /* Activa Flexbox para organizar contenido en fila */
   align-items: center;                    /* Centra verticalmente los hijos del header */
   padding: 20px 30px;                     /* Relleno: arriba/abajo, a los lados */
