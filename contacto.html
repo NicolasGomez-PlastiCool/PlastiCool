@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contacto - PlastiCool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,19 +13,19 @@
       <img src="logo-plasticool.jpeg" alt="Logo PlastiCool" class="logo">
     </div>
     <div class="contenido-header">
-      <h1>PlastiCool SpA.</h1>
+      <h1 class="gagalin">PlastiCool SpA.</h1>
       <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables - 
         J&N Distribuciones Sustentables SpA.</p>
       <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="index.html" class="gagalin">Inicio</a>
+        <a href="contacto.html" class="gagalin">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section>
-      <h2>Formulario de contacto</h2>
+      <h2 class="gagalin">Formulario de contacto</h2>
       <form id="form-contacto">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -44,14 +45,14 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 PlastiCool SpA. | Sitio en desarrollo</p>
+    <p>© 2025 PlastiCool SpA. | Sitio en desarrollo</p>
   </footer>
 
   <script>
     const form = document.getElementById('form-contacto');
 
     form.addEventListener('submit', async function (e) {
-      e.preventDefault(); // Evita el envío tradicional
+      e.preventDefault();
 
       const formData = new FormData(form);
 
