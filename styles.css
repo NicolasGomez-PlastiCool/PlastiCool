@@ -1,104 +1,109 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;         /* Fuente del texto general de la página */
-  margin: 0;                              /* Elimina espacio por defecto fuera del body */
-  padding: 0;                             /* Elimina relleno interior */
-  line-height: 1.6;                       /* Espaciado entre líneas (más alto = más separación) */
-  background-color: #f9f9f9;              /* Color de fondo */
+  font-family: Arial, sans-serif;         /* Fuente base por defecto */
+  margin: 0;                              /* Sin márgenes externos */
+  padding: 0;                             /* Sin relleno interno */
+  line-height: 1.6;                       /* Espaciado vertical entre líneas */
+  background-color: #f9f9f9;              /* Color de fondo claro */
+}
+
+/* NUEVA CLASE: APLICA LA FUENTE GAGALIN A TEXTOS ESPECÍFICOS */
+.gagalin {
+  font-family: 'Gagalin', cursive;        /* Usa Gagalin y tipo cursiva por fallback */
 }
 
 /* HEADER con logo a la izquierda y color latte */
 .header-fijo {
-  background-color: #f3e9dc;              /* Color de fondo tipo latte desde Canva */
-  display: flex;                          /* Activa Flexbox para organizar contenido en fila */
-  align-items: center;                    /* Centra verticalmente los hijos del header */
-  padding: 20px 30px;                     /* Relleno: arriba/abajo, a los lados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave bajo el header */
+  background-color: #f3e9dc;              /* Color beige claro estilo latte */
+  display: flex;                          /* Flexbox: organiza en fila */
+  align-items: center;                    /* Centrado vertical */
+  padding: 20px 30px;                     /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);/* Sombra inferior sutil */
 }
 
 /* Contenedor del logo */
 .logo-container {
-  flex: 0 0 auto;                         /* No crece ni se encoge, mantiene su tamaño */
-  margin-right: 50px;                     /* Espacio entre el logo y el texto */
+  flex: 0 0 auto;                         /* Tamaño fijo, sin crecimiento */
+  margin-right: 50px;                    /* Espacio derecho entre logo y texto */
 }
 
 .logo {
-  max-height: 100px;                       /* Altura máxima del logo */
-  height: auto;                           /* Ajusta automáticamente la altura */
-  width: auto;                            /* Ajusta automáticamente el ancho */
+  max-height: 100px;                      /* Altura máxima del logo */
+  height: auto;                           /* Altura proporcional */
+  width: auto;                            /* Ancho proporcional */
 }
 
 /* Contenedor del texto y menú */
 .contenido-header {
-  flex: 1;                                /* Ocupa todo el espacio restante */
-  text-align: center;                       /* Alinea texto  */
+  flex: 1;                                /* Resto del espacio disponible */
+  text-align: center;                     /* Centrado horizontal */
 }
 
 .contenido-header h1 {
-  margin: 0;                              /* Elimina margen por defecto del título */
-  font-size: 2.5em;                       /* Tamaño del texto (relativo al body) */
-  color: #333;                            /* Color gris oscuro del texto */
-  text-align: center;
+  margin: 0;                              /* Elimina espacio externo */
+  font-size: 2.5em;                       /* Tamaño grande del título */
+  color: #333;                            /* Gris oscuro */
+  text-align: center;                     /* Centrado explícito */
 }
 
 .contenido-header p {
-  margin: 5px 0;                          /* Margen arriba/abajo, 0 a los lados */
-  font-size: 1.2 em;                      /* Tamaño fuente */
-  color: #333;                            /* Gris oscuro */
-  text-align: center;
+  margin: 5px 0;                          /* Separación vertical ligera */
+  font-size: 1.2em;                       /* Tamaño medio del texto */
+  color: #333;                            /* Color oscuro */
+  text-align: center;                     /* Centrado */
 }
 
 nav a {
-  margin: 0 30px;                         /* Espacio entre los enlaces */
-  color: black;                           /* Color del texto del enlace */
-  text-decoration: none;                 /* Elimina subrayado */
+  margin: 0 30px;                         /* Espaciado horizontal entre enlaces */
+  color: black;                           /* Texto negro */
+  text-decoration: none;                 /* Sin subrayado */
   font-weight: bold;                     /* Negrita */
-  text-transform: uppercase;             /* Texto en mayusculas */
+  text-transform: uppercase;             /* Convierte a MAYÚSCULAS */
 }
 
 /* MAIN */
 main {
-  padding: 20px;                          /* Espacio interno alrededor del contenido principal */
+  padding: 20px;                          /* Espaciado interno en la sección principal */
 }
 
 /* GALERÍA */
 .galeria img {
   width: 30%;                             /* Cada imagen ocupa el 30% del ancho disponible */
-  margin: 10px;                           /* Espacio alrededor de cada imagen */
-  border-radius: 10px;                    /* Bordes redondeados, con border 0 los bordes son cuadrados */
+  margin: 10px;                           /* Separación alrededor */
+  border-radius: 10px;                    /* Bordes redondeados */
 }
 
 /* FORMULARIO */
 form {
-  display: flex;                          /* Activa Flexbox */
-  flex-direction: column;                 /* Elementos uno debajo del otro */
-  max-width: 800px;                       /* Ancho máximo del formulario */
-  margin: auto;                           /* Centra horizontalmente */
+  display: flex;                          /* Layout flexible en columna */
+  flex-direction: column;                 /* De arriba hacia abajo */
+  max-width: 800px;                       /* Ancho máximo */
+  margin: auto;                           /* Centrado horizontal */
 }
 
 label {
-  margin-bottom: 30px;                    /* Espacio bajo cada etiqueta */
+  margin-bottom: 30px;                    /* Espacio debajo de cada etiqueta */
 }
 
 input, textarea {
-  padding: 8px;                           /* Espacio interno para texto del usuario */
-  font-size: 1.2em;                         /* Tamaño de letra */
-  width: 100%;                            /* Que ocupe todo el ancho disponible */
-  box-sizing: border-box;                 /* Incluye padding en el ancho total */
+  padding: 8px;                           /* Espacio interior */
+  font-size: 1.2em;                       /* Tamaño cómodo de letra */
+  width: 100%;                            /* Ocupa todo el ancho */
+  box-sizing: border-box;                 /* Incluye padding dentro del ancho */
 }
 
 button {
-  background-color: #00897b;              /* Color de fondo del botón */
-  color: black;                           /* Color del texto del botón */
+  background-color: #00897b;              /* Verde azulado */
+  color: black;                           /* Texto negro */
   border: none;                           /* Sin borde */
   padding: 10px;                          /* Espacio interno */
-  cursor: pointer;                        /* Cambia el cursor al pasar sobre él */
-  font-size: 1.2em;                         /* Tamaño de letra */
+  cursor: pointer;                        /* Mano al pasar el mouse */
+  font-size: 1.2em;                       /* Letra grande */
 }
 
 /* FOOTER */
 footer {
   background-color: #eee;                 /* Gris claro */
-  text-align: center;                     /* Centra el texto */
-  padding: 10px;                          /* Espacio interno */
+  text-align: center;                     /* Texto centrado */
+  padding: 10px;                          /* Relleno interno */
 }
