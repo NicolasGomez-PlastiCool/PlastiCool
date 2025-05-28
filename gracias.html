@@ -4,69 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gracias por tu mensaje</title>
+
+  <!-- Fuente Gagalin -->
+  <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+
+  <!-- Fuente Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS general -->
   <link rel="stylesheet" href="styles.css">
+
   <style>
+    /* Contenedor principal del mensaje de agradecimiento */
     .gracias-container {
-      text-align: center;
-      padding: 100px 20px 40px;
+      text-align: center;                /* Centra el contenido horizontalmente */
+      padding: 100px 20px 40px;          /* Espaciado arriba, lados y abajo */
     }
 
+    /* Título de agradecimiento */
     .gracias-container h1 {
-      color: #2e8b57;
-      font-size: 2em;
+      font-size: 2.5em;                  /* Tamaño grande como en contacto */
+      color: #333;                       /* Gris oscuro, mismo color que otros títulos */
     }
 
+    /* Texto debajo del título */
     .gracias-container p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #333;
+      font-size: 1.2em;                  /* Igual que en contacto */
+      color: #333;                       /* Gris oscuro */
+      margin-bottom: 30px;              /* Espacio antes de los botones */
     }
 
-    .boton {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      font-size: 1em;
-      background-color: #2e8b57;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
+    /* Estilo de los botones, igual al de 'Enviar consulta' */
+    .boton-estandar {
+      background-color: #f3e9dc;        /* Color de fondo tipo latte solicitado */
+      color: black;                     /* Texto negro como en contacto */
+      border: none;                     /* Sin borde */
+      padding: 10px 20px;               /* Espaciado interno */
+      font-size: 1.2em;                 /* Tamaño de letra igual al botón de contacto */
+      text-decoration: none;            /* Elimina subrayado si es un <a> */
+      cursor: pointer;                  /* Cursor tipo mano */
+      border-radius: 5px;               /* Bordes redondeados suaves */
+      transition: background-color 0.3s ease; /* Transición al pasar el cursor */
+      display: inline-block;            /* Permite aplicar padding y márgenes */
+      margin: 10px;                     /* Espacio entre los botones */
     }
 
-    .boton:hover {
-      background-color: #f3e9dc;
+    /* Hover igual que en contacto */
+    .boton-estandar:hover {
+      background-color: ##e0d6c8;                     /* Color ligeramente más oscuro al pasar el mouse */
     }
   </style>
 </head>
 <body>
+  <!-- ENCABEZADO -->
   <header class="header-fijo">
     <div class="logo-container">
       <img src="logo-plasticool.jpeg" alt="Logo PlastiCool" class="logo">
     </div>
     <div class="contenido-header">
-      <h1>PlastiCool SpA.</h1>
-      <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables -
-        J&N Distribuciones Sustentables SpA.</p>
+      <h1 class="gagalin">PlastiCool SpA</h1>
+      <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables - J&N Distribuciones Sustentables SpA.</p>
       <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="index.html" class="gagalin">Inicio</a>
+        <a href="contacto.html" class="gagalin">Contacto</a>
       </nav>
     </div>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="gracias-container">
-      <h1>¡Gracias por tu mensaje!</h1>
+      <h1 class="gagalin">¡Gracias por tu mensaje!</h1>
       <p>Nos pondremos en contacto contigo a la brevedad.</p>
-      <a href="index.html" class="boton">Ir al inicio</a>
-      <a href="contacto.html" class="boton">Enviar otro mensaje</a>
+      <a href="index.html" class="boton-estandar">Ir al inicio</a>
+      <a href="contacto.html" class="boton-estandar">Enviar otro mensaje</a>
     </div>
   </main>
 
+  <!-- PIE DE PÁGINA -->
   <footer>
-    <p>&copy; 2025 PlastiCool SpA. | Sitio en desarrollo</p>
+    <p>© 2025 PlastiCool SpA. | Sitio en desarrollo</p>
   </footer>
 </body>
 </html>
