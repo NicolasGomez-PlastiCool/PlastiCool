@@ -61,8 +61,7 @@ nav a {
   font-weight: bold;                             /* Enlaces en negrita */
   text-transform: uppercase;                     /* Texto en mayúsculas */
   font-family: 'Gagalin', cursive;               /* Aplica fuente decorativa Gagalin solo a los enlaces */
-  font-size: 2.5em;         /* Tamaño de texto más grande */
-  padding: 10px 15px;       /* Espacio interno para que el "botón" sea más grande */
+  font-size: 3.5em;                              /* Tamaño de texto más grande */
 }
 
 /* --------------------- MAIN --------------------- */
