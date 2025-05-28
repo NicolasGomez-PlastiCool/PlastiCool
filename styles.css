@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;         /* Fuente principal para todo el sitio (cuerpo, textos, etiquetas) */
   margin: 0;                                     /* Elimina márgenes externos por defecto */
   padding: 0;                                    /* Elimina relleno interno por defecto */
-  line-height: 1.6;                              /* Espaciado entre líneas (más legible) */
+  line-height: 1.5;                              /* Espaciado entre líneas (más legible) */
   background-color: #f9f9f9;                     /* Color de fondo claro para toda la página */
 }
 
@@ -24,11 +24,11 @@ body {
 /* Contenedor del logo */
 .logo-container {
   flex: 0 0 auto;                                /* Tamaño fijo que no se expande ni reduce */
-  margin-right: 50px;                            /* Espacio entre el logo y el texto del encabezado */
+  margin-right: 40px;                            /* Espacio entre el logo y el texto del encabezado */
 }
 
 .logo {
-  max-height: 100px;                             /* Altura máxima del logo para mantener proporción */
+  max-height: 120px;                             /* Altura máxima del logo para mantener proporción */
   height: auto;                                  /* Ajuste automático de la altura */
   width: auto;                                   /* Ajuste automático del ancho */
 }
@@ -41,21 +41,21 @@ body {
 
 .contenido-header h1 {
   margin: 0;                                     /* Elimina margen externo del título */
-  font-size: 2.5em;                              /* Tamaño grande del título principal */
+  font-size: 3.5em;                              /* Tamaño grande del título principal */
   color: #333;                                   /* Color gris oscuro para el texto */
   text-align: center;                            /* Centra horizontalmente el título */
 }
 
 .contenido-header p {
   margin: 5px 0;                                 /* Espacio vertical entre párrafos, sin margen lateral */
-  font-size: 1.2em;                              /* Tamaño ligeramente mayor al texto base */
+  font-size: 1.5em;                              /* Tamaño ligeramente mayor al texto base */
   color: #333;                                   /* Mismo color gris oscuro */
   text-align: center;                            /* Texto centrado */
 }
 
 /* Navegación del encabezado */
 nav a {
-  margin: 0 30px;                                /* Espacio horizontal entre enlaces */
+  margin: 0 50px;                                /* Espacio horizontal entre enlaces */
   color: black;                                  /* Texto negro para enlaces */
   text-decoration: none;                         /* Sin subrayado */
   font-weight: bold;                             /* Enlaces en negrita */
@@ -90,7 +90,7 @@ form {
 
 /* Etiquetas del formulario */
 label {
-  font-size: 1em;                                /* Tamaño base de texto */
+  font-size: 1.5em;                                /* Tamaño base de texto */
   color: #333;                                   /* Color gris oscuro */
   margin-bottom: 5px;                            /* Espacio pequeño debajo de cada etiqueta */
   font-family: 'Open Sans', sans-serif;          /* Fuente legible */
