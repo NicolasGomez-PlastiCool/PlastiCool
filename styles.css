@@ -10,7 +10,7 @@ body {
 
 /* Clase que crea un espacio visual entre el header fijo y el contenido */
 .espacio-header {
-  margin-bottom: 65px; /* Ajusta este valor si quieres más o menos separación */
+  margin-bottom: 80px; /* Ajusta este valor si quieres más o menos separación */
 }
 
 /* Fuente Gagalin aplicada solo a elementos específicos */
@@ -27,7 +27,7 @@ body {
   background-color: #f3e9dc;
   display: flex;
   align-items: center;
-  padding: 20px 30px;
+  padding: 40px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .logo {
-  max-height: 120px;
+  max-height: 1400px;
   height: auto;
   width: auto;
 }
