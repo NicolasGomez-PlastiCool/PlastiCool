@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  padding-top: 180px; /* Espacio para header fijo */
   line-height: 1.5;
   background-color: #f9f9f9;
 }
@@ -14,11 +15,16 @@ body {
 
 /* --------------------- HEADER --------------------- */
 .header-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #f3e9dc;
   display: flex;
   align-items: center;
   padding: 20px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .logo-container {
@@ -124,7 +130,9 @@ main {
   border-radius: 5px;
   margin-top: 10px;
   display: block;
-  width: 100%;
+  width: calc(100% - 20px); /* Reduce ancho para evitar que se “pegue” */
+  margin-right: auto;
+  align-self: flex-start;
   transition: background-color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
 }
@@ -195,3 +203,4 @@ footer p {
   font-size: 1em;
   color: #333;
 }
+
