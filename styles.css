@@ -10,7 +10,7 @@ body {
 
 /* Clase que crea un espacio visual entre el header fijo y el contenido */
 .espacio-header {
-  margin-bottom: 80px; /* Ajusta este valor si quieres más o menos separación */
+  margin-bottom: 40px; /* Ajusta este valor si quieres más o menos separación */
 }
 
 /* Fuente Gagalin aplicada solo a elementos específicos */
@@ -208,3 +208,4 @@ footer p {
   font-size: 1em;
   color: #333;
 }
+
