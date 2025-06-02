@@ -10,7 +10,7 @@ body {
 
 /* Clase que crea un espacio visual entre el header fijo y el contenido */
 .espacio-header {
-  margin-bottom: 40px; /* Ajusta este valor si quieres más o menos separación */
+  margin-bottom: 65px; /* Ajusta este valor si quieres más o menos separación */
 }
 
 /* Fuente Gagalin aplicada solo a elementos específicos */
