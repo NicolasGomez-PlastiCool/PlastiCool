@@ -97,16 +97,40 @@ main {
   padding: 15px;
   font-size: 1em;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   color: #333;
   font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
 }
 
 /* Ajuste especial para imagen que se veía desproporcionada */
 .ajustar-ancho {
   object-fit: contain;
-  padding: 10px;
+  padding: 5px;
   background-color: #fff;
+}
+
+/* --------------------- BOTÓN DE COTIZACIÓN --------------------- */
+.btn-contacto {
+  background-color: #f3e9dc;
+  color: #333;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-contacto:hover {
+  background-color: #e0d6c8;
 }
 
 /* --------------------- FORMULARIO --------------------- */
@@ -171,4 +195,3 @@ footer p {
   font-size: 1em;
   color: #333;
 }
-
