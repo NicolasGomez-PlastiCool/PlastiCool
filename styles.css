@@ -44,6 +44,8 @@ body {
   max-height: 120px;
   height: auto;
   width: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* Contenedor central para el h1 y p, alineado en columna */
