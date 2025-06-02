@@ -6,6 +6,7 @@ body {
   padding-top: 180px; /* Espacio para header fijo */
   line-height: 1.5;
   background-color: #f9f9f9;
+  color: #333; /* Color general para texto legible */
 }
 
 /* Fuente Gagalin aplicada solo a elementos específicos */
@@ -57,17 +58,39 @@ body {
   text-align: center;
 }
 
+/* Botones del header más pequeños */
 nav a {
-  margin: 0 50px;
+  margin: 0 25px; /* reducir espacio lateral */
   color: black;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Gagalin', cursive;
-  font-size: 3.1em;
+  font-size: 1.8em; /* reducido desde 3.1em */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #555;
 }
 
 /* --------------------- MAIN --------------------- */
+/* Títulos visibles y bien definidos */
+main h2 {
+  font-family: 'Gagalin', cursive;
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 main {
   padding: 20px;
 }
@@ -130,7 +153,7 @@ main {
   border-radius: 5px;
   margin-top: 10px;
   display: block;
-  width: calc(100% - 20px); /* Reduce ancho para evitar que se “pegue” */
+  width: calc(100% - 20px);
   margin-right: auto;
   align-self: flex-start;
   transition: background-color 0.3s ease;
@@ -203,4 +226,3 @@ footer p {
   font-size: 1em;
   color: #333;
 }
-
