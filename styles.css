@@ -1,277 +1,204 @@
+Css
 /* --------------------- ESTILOS GENERALES --------------------- */
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  padding-top: 140px; /* Espacio para header fijo ajustado */
-  line-height: 1.5;
-  background-color: #f9f9f9;
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+padding: 0;
+padding-top: 140px; /* Espacio para header fijo ajustado */
+line-height: 1.5;
+background-color: #f9f9f9;
 }
-
+/* Clase que crea un espacio visual entre el header fijo y el contenido */
 .espacio-header {
-  margin-bottom: 40px;
+margin-bottom: 40px; /* Ajusta este valor si quieres más o menos separación */
 }
-
+/* Fuente Gagalin aplicada solo a elementos específicos */
 .gagalin {
-  font-family: 'Gagalin', cursive;
+font-family: 'Gagalin', cursive;
 }
-
 /* --------------------- HEADER --------------------- */
 .header-fijo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f3e9dc;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-  flex-wrap: wrap;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #f3e9dc;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 30px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+z-index: 999;
+gap: 20px;
 }
-
+/* Logo a la izquierda */
 .logo-container {
-  flex: 0 0 auto;
-  margin-right: 20px;
+flex: 0 0 auto;
+margin-right: 20px;
 }
-
 .logo {
-  max-height: 120px;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  display: block;
+max-height: 120px;
+height: auto;
+width: auto;
+max-width: 100%;
+display: block;
 }
-
+/* Contenedor central para el h1 y p, alineado en columna */
 .contenido-header {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-width: 0;
+flex: 1 1 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+min-width: 0; /* Para que el texto se comprima bien */
 }
-
 .contenido-header h1 {
-  margin: 0;
-  font-size: 3.5em;
-  color: #333;
-  line-height: 1.1;
+margin: 0;
+font-size: 3.5em;
+color: #333;
+line-height: 1.1;
 }
-
 .contenido-header p {
-  margin: 5px 0 0 0;
-  font-size: 1.5em;
-  color: #333;
-  line-height: 1.2;
+margin: 5px 0 0 0;
+font-size: 1.5em;
+color: #333;
+line-height: 1.2;
 }
-
+/* Navegación con los 3 botones al lado derecho */
 nav {
-  display: flex;
-  flex: 0 0 auto;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+display: flex;
+flex: 0 0 auto;
+gap: 40px;
+justify-content: center;
+align-items: center;
 }
-
 nav a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Gagalin', cursive;
-  font-size: 2.5em;
-  white-space: nowrap;
+color: black;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Gagalin', cursive;
+font-size: 2.5em;
+white-space: nowrap;
 }
-
 /* --------------------- MAIN --------------------- */
 main {
-  padding: 20px;
+padding: 20px;
 }
-
-/* --------------------- H2 --------------------- */
-h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 10px;
-  font-family: 'Gagalin', cursive;
-}
-
 /* --------------------- GALERÍA --------------------- */
 .fila {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+margin-top: 20px;
+flex-wrap: wrap;
 }
-
 .item-galeria {
-  display: flex;
-  flex-direction: row;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 32%;
-  min-width: 300px;
+display: flex;
+flex-direction: row;
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+overflow: hidden;
+width: 32%;
+min-width: 300px;
 }
-
 .item-galeria img {
-  width: 50%;
-  object-fit: cover;
-  border-right: 1px solid #eee;
+width: 50%;
+object-fit: cover;
+border-right: 1px solid #eee;
 }
-
 .item-galeria .descripcion {
-  width: 50%;
-  padding: 15px;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #333;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+width: 50%;
+padding: 15px;
+font-size: 1em;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #333;
+font-family: 'Open Sans', sans-serif;
+background-color: #fff;
 }
-
+/* Ajuste especial para imagen que se veía desproporcionada */
 .ajustar-ancho {
-  object-fit: contain;
-  padding: 5px;
-  background-color: #fff;
+object-fit: contain;
+padding: 5px;
+background-color: #fff;
 }
-
 /* --------------------- BOTÓN DE COTIZACIÓN --------------------- */
 .btn-contacto {
-  background-color: #f3e9dc;
-  color: #333;
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 10px;
-  display: block;
-  width: calc(100% - 20px);
-  margin-right: auto;
-  align-self: flex-start;
-  transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
+background-color: #f3e9dc;
+color: #333;
+border: none;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+font-size: 1em;
+font-weight: bold;
+border-radius: 5px;
+margin-top: 10px;
+display: block;
+width: calc(100% - 20px);
+margin-right: auto;
+align-self: flex-start;
+transition: background-color 0.3s ease;
+font-family: 'Open Sans', sans-serif;
 }
-
 .btn-contacto:hover {
-  background-color: #e0d6c8;
+background-color: #e0d6c8;
 }
-
 /* --------------------- FORMULARIO --------------------- */
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  gap: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+display: flex;
+flex-direction: column;
+max-width: 800px;
+margin: 30px auto;
+padding: 20px;
+gap: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-
 label {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
+font-size: 1.5em;
+color: #333;
+margin-bottom: 5px;
+font-family: 'Open Sans', sans-serif;
 }
-
 input, textarea {
-  padding: 10px;
-  font-size: 1.1em;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box;
+padding: 10px;
+font-size: 1.1em;
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+box-sizing: border-box;
 }
-
 textarea {
-  resize: vertical;
+resize: vertical;
 }
-
 button {
-  background-color: #f3e9dc;
-  color: #333;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  transition: background-color 0.3s ease;
+background-color: #f3e9dc;
+color: #333;
+border: none;
+padding: 12px 20px;
+font-size: 1em;
+cursor: pointer;
+border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+transition: background-color 0.3s ease;
 }
-
 button:hover {
-  background-color: #e0d6c8;
+background-color: #e0d6c8;
 }
-
 /* --------------------- FOOTER --------------------- */
 footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 10px;
+background-color: #eee;
+text-align: center;
+padding: 10px;
 }
-
 footer p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  color: #333;
-}
-
-/* --------------------- MEDIA QUERIES --------------------- */
-@media (max-width: 768px) {
-  .header-fijo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo-container {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .item-galeria {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .item-galeria img,
-  .item-galeria .descripcion {
-    width: 100%;
-  }
-
-  .contenido-header h1 {
-    font-size: 2.5em;
-  }
-
-  .contenido-header p {
-    font-size: 1.2em;
-  }
-
-  nav a {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+color: #333;
 }
