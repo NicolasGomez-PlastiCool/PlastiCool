@@ -9,7 +9,7 @@ body {
 }
 
 .espacio-header {
-  margin-bottom: 40px;                             /* Espacio entre el header fijo y el contenido */
+  margin-bottom: 30px;                             /* Espacio entre el header fijo y el contenido */
 }
 
 .gagalin {
@@ -19,14 +19,14 @@ body {
 /* --------------------- TITULOS Y TEXTO DEL BODY --------------------- */
 h2 {
   font-family: 'Gagalin', cursive;                 /* Fuente para subtítulos */
-  font-size: 2.5em;                                /* Tamaño grande de subtítulo */
+  font-size: 2.8em;                                /* Tamaño grande de subtítulo */
   color: #333;                                     /* Color gris oscuro */
   margin: 40px 0 10px;                             /* Márgenes arriba y abajo del título */
 }
 
 .p-body {
   font-family: 'Open Sans', sans-serif;            /* Fuente para párrafos del cuerpo */
-  font-size: 1.2em;                                /* Tamaño de texto legible */
+  font-size: 1em;                                /* Tamaño de texto legible */
   color: #333;                                     /* Color gris oscuro */
   margin: 10px 0 20px;                             /* Espaciado vertical */
 }
@@ -49,11 +49,11 @@ h2 {
 
 .logo-container {
   flex: 0 0 auto;                                  /* Tamaño fijo del logo */
-  margin-right: 20px;                              /* Separación del contenido */
+  margin-right: 10px;                              /* Separación del contenido */
 }
 
 .logo {
-  max-height: 120px;                               /* Altura máxima del logo */
+  max-height: 130px;                               /* Altura máxima del logo */
   height: auto;                                    /* Mantiene proporción */
   width: auto;                                     /* Ancho automático */
   max-width: 100%;                                 /* No excede el contenedor */
@@ -78,7 +78,7 @@ h2 {
 
 .contenido-header p {
   margin: 5px 0 0 0;                               /* Espaciado entre h1 y p */
-  font-size: 1.5em;                                /* Tamaño moderadamente grande */
+  font-size: 1.3em;                                /* Tamaño moderadamente grande */
   color: #333;                                     /* Color de texto */
   line-height: 1.2;                                /* Espaciado entre líneas más ajustado */
 }
@@ -97,13 +97,13 @@ nav a {
   font-weight: bold;                               /* Negrita */
   text-transform: uppercase;                       /* Mayúsculas */
   font-family: 'Gagalin', cursive;                 /* Fuente decorativa */
-  font-size: 2.5em;                                /* Tamaño grande */
+  font-size: 2.1em;                                /* Tamaño grande */
   white-space: nowrap;                             /* Evita saltos de línea */
 }
 
 /* --------------------- MAIN --------------------- */
 main {
-  padding: 20px;                                   /* Espaciado general interno */
+  padding: 15px;                                   /* Espaciado general interno */
 }
 
 /* --------------------- GALERÍA --------------------- */
