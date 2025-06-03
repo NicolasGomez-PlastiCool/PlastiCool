@@ -1,8 +1,4 @@
 /* --------------------- ESTILOS GENERALES --------------------- */
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -12,12 +8,10 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Clase que crea un espacio visual entre el header fijo y el contenido */
 .espacio-header {
-  margin-bottom: 40px; /* Ajusta este valor si quieres más o menos separación */
+  margin-bottom: 40px;
 }
 
-/* Fuente Gagalin aplicada solo a elementos específicos */
 .gagalin {
   font-family: 'Gagalin', cursive;
 }
@@ -35,9 +29,7 @@ body {
   padding: 20px 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  gap: 20px;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .logo-container {
@@ -53,7 +45,6 @@ body {
   display: block;
 }
 
-/* Contenedor central para el h1 y p, alineado en columna */
 .contenido-header {
   flex: 1 1 auto;
   display: flex;
@@ -65,7 +56,7 @@ body {
 
 .contenido-header h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 3.5em;
   color: #333;
   line-height: 1.1;
 }
@@ -77,7 +68,6 @@ body {
   line-height: 1.2;
 }
 
-/* Navegación con los 3 botones al lado derecho */
 nav {
   display: flex;
   flex: 0 0 auto;
@@ -102,12 +92,10 @@ main {
   padding: 20px;
 }
 
-/* --------------------- TÍTULOS H2 --------------------- */
+/* --------------------- H2 --------------------- */
 h2 {
   font-size: 2em;
-  font-weight: bold;
   color: #333;
-  margin-top: 30px;
   margin-bottom: 10px;
   font-family: 'Gagalin', cursive;
 }
@@ -207,6 +195,7 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -242,56 +231,44 @@ footer p {
   color: #333;
 }
 
-/* --------------------- RESPONSIVE DESIGN --------------------- */
+/* --------------------- MEDIA QUERIES --------------------- */
 @media (max-width: 768px) {
   .header-fijo {
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    text-align: center;
   }
 
-  .logo {
-    max-height: 80px;
-  }
-
-  .contenido-header h1 {
-    font-size: 2em;
-  }
-
-  .contenido-header p {
-    font-size: 1em;
+  .logo-container {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   nav {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  nav a {
-    font-size: 1.5em;
-  }
-
-  .fila {
-    flex-direction: column;
+    gap: 20px;
   }
 
   .item-galeria {
+    flex-direction: column;
     width: 100%;
-    min-width: unset;
   }
 
-  .item-galeria img {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #eee;
-  }
-
+  .item-galeria img,
   .item-galeria .descripcion {
     width: 100%;
   }
 
-  form {
-    padding: 10px;
-    width: 90%;
+  .contenido-header h1 {
+    font-size: 2.5em;
+  }
+
+  .contenido-header p {
+    font-size: 1.2em;
+  }
+
+  nav a {
+    font-size: 2em;
   }
 
   h2 {
