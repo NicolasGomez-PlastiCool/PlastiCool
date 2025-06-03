@@ -1,4 +1,8 @@
 /* --------------------- ESTILOS GENERALES --------------------- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -32,9 +36,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
   gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-/* Logo a la izquierda */
 .logo-container {
   flex: 0 0 auto;
   margin-right: 20px;
@@ -55,12 +60,12 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  min-width: 0; /* Para que el texto se comprima bien */
+  min-width: 0;
 }
 
 .contenido-header h1 {
   margin: 0;
-  font-size: 3.5em;
+  font-size: 3em;
   color: #333;
   line-height: 1.1;
 }
@@ -79,6 +84,7 @@ nav {
   gap: 40px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -94,6 +100,16 @@ nav a {
 /* --------------------- MAIN --------------------- */
 main {
   padding: 20px;
+}
+
+/* --------------------- TÍTULOS H2 --------------------- */
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Gagalin', cursive;
 }
 
 /* --------------------- GALERÍA --------------------- */
@@ -134,7 +150,6 @@ main {
   background-color: #fff;
 }
 
-/* Ajuste especial para imagen que se veía desproporcionada */
 .ajustar-ancho {
   object-fit: contain;
   padding: 5px;
@@ -192,7 +207,6 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box;
 }
 
 textarea {
@@ -226,4 +240,61 @@ footer p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #333;
+}
+
+/* --------------------- RESPONSIVE DESIGN --------------------- */
+@media (max-width: 768px) {
+  .header-fijo {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    max-height: 80px;
+  }
+
+  .contenido-header h1 {
+    font-size: 2em;
+  }
+
+  .contenido-header p {
+    font-size: 1em;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 1.5em;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  .item-galeria {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .item-galeria img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .item-galeria .descripcion {
+    width: 100%;
+  }
+
+  form {
+    padding: 10px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
 }
