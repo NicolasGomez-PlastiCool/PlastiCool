@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Formulario de contacto para solicitar cotizaciones o información sobre nuestros vasos reutilizables." />
   <title>Contacto - PlastiCool</title>
 
   <!-- Fuente Gagalin -->
@@ -41,16 +42,16 @@
       <h2 class="gagalin">Formulario de contacto</h2>
       <form id="form-contacto">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
 
         <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+        <input type="email" id="correo" name="correo" required placeholder="tucorreo@example.com">
 
         <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono" required>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +56 9 1234 5678" pattern="[0-9+\-()\s]{7,20}">
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje"></textarea>
 
         <button type="submit">Enviar consulta</button>
       </form>
@@ -81,7 +82,7 @@
         });
 
         if (response.ok) {
-          window.location.href = 'https://nicolasgomez-plasticool.github.io/PlastiCool/gracias.html';
+          window.location.href = 'gracias.html';
         } else {
           alert('Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo.');
         }
