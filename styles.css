@@ -298,3 +298,138 @@ footer p {
     flex-wrap: wrap;                              /* Permite saltos de línea */
   }
 }
+=======
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/styles.css b/styles.css
+index f2670fa73a278aa16763f6028fd030e2831b66e1..87cfc77cb281715976811c50c3fc4e3f02e08daf 100644
+--- a/styles.css
++++ b/styles.css
+@@ -1,39 +1,67 @@
+ /* --------------------- ESTILOS GENERALES --------------------- */
+ body {
+   font-family: 'Open Sans', sans-serif;            /* Fuente principal del sitio */
+   margin: 0;                                       /* Elimina márgenes por defecto */
+   padding: 0;                                      /* Elimina padding por defecto */
+   padding-top: 140px;                              /* Espacio para el header fijo */
+   line-height: 1.5;                                /* Altura de línea legible */
+   background-color: #f9f9f9;                       /* Color de fondo general claro */
+ }
+ 
+ .espacio-header {
+   margin-bottom: 30px;                             /* Espacio entre el header fijo y el contenido */
+ }
+ 
++/* --------------------- HERO --------------------- */
++.hero {
++  background: linear-gradient(135deg, #64b3f4, #c2e59c); /* Fondo degradado */
++  color: #fff;                                   /* Texto blanco */
++  text-align: center;                             /* Centrado de contenido */
++  padding: 80px 20px;                             /* Espaciado generoso */
++}
++
++.hero h2 {
++  font-size: 3em;                                /* Título grande */
++  margin: 0 0 20px;                              /* Espacio inferior */
++}
++
++.btn-hero {
++  background-color: #f3e9dc;                     /* Fondo crema */
++  color: #333;                                   /* Texto gris oscuro */
++  padding: 12px 25px;                            /* Espaciado interno */
++  text-decoration: none;                         /* Sin subrayado */
++  font-weight: bold;                             /* Negrita */
++  border-radius: 5px;                            /* Bordes redondeados */
++  display: inline-block;                         /* Mantiene tamaño contenido */
++  transition: background-color 0.3s ease;        /* Efecto hover */
++}
++
++.btn-hero:hover {
++  background-color: #e0d6c8;                     /* Cambio al pasar el cursor */
++}
++
+ .gagalin {
+   font-family: 'Gagalin', cursive;                 /* Fuente decorativa Gagalin */
+ }
+ 
+ /* --------------------- TITULOS Y TEXTO DEL BODY --------------------- */
+ h2 {
+   font-family: 'Gagalin', cursive;                 /* Fuente para subtítulos */
+   font-size: 2.8em;                                /* Tamaño grande de subtítulo */
+   color: #333;                                     /* Color gris oscuro */
+   margin: 40px 0 10px;                             /* Márgenes arriba y abajo del título */
+ }
+ 
+ .p-body {
+   font-family: 'Open Sans', sans-serif;            /* Fuente para párrafos del cuerpo */
+   font-size: 1em;                                /* Tamaño de texto legible */
+   color: #333;                                     /* Color gris oscuro */
+   margin: 10px 0 20px;                             /* Espaciado vertical */
+ }
+ 
+ /* --------------------- HEADER --------------------- */
+ .header-fijo {
+   position: fixed;                                 /* Fija el header en la parte superior */
+   top: 0;                                          /* Alineación superior */
+   left: 0;                                         /* Alineación izquierda */
+   width: 100%;                                     /* Ocupa todo el ancho de la pantalla */
+diff --git a/styles.css b/styles.css
+index f2670fa73a278aa16763f6028fd030e2831b66e1..87cfc77cb281715976811c50c3fc4e3f02e08daf 100644
+--- a/styles.css
++++ b/styles.css
+@@ -214,25 +242,52 @@ button {
+   border: none;                                    /* Sin borde */
+   padding: 12px 20px;                              /* Espaciado interno */
+   font-size: 1em;                                   /* Tamaño de texto */
+   cursor: pointer;                                 /* Cursor tipo botón */
+   border-radius: 5px;                              /* Bordes redondeados */
+   font-family: 'Open Sans', sans-serif;            /* Fuente */
+   transition: background-color 0.3s ease;          /* Transición suave */
+ }
+ 
+ button:hover {
+   background-color: #e0d6c8;                       /* Color al pasar el cursor */
+ }
+ 
+ /* --------------------- FOOTER --------------------- */
+ footer {
+   background-color: #eee;                          /* Fondo gris claro */
+   text-align: center;                              /* Texto centrado */
+   padding: 10px;                                   /* Espaciado interno */
+ }
+ 
+ footer p {
+   font-family: 'Open Sans', sans-serif;            /* Fuente del texto */
+   font-size: 1em;                                   /* Tamaño de texto */
+   color: #333;                                     /* Color de texto */
+ }
++
++/* --------------------- RESPONSIVE --------------------- */
++@media (max-width: 768px) {
++  nav {
++    flex-direction: column;                        /* Menú vertical */
++    gap: 20px;                                     /* Separación entre enlaces */
++  }
++
++  nav a {
++    font-size: 1.5em;                              /* Tamaño menor */
++  }
++
++  .item-galeria {
++    flex-direction: column;                        /* Apila imagen y texto */
++    width: 100%;                                   /* Ocupa todo el ancho */
++  }
++
++  .item-galeria img {
++    width: 100%;                                   /* Imagen completa */
++    border-right: none;                            /* Sin división lateral */
++    border-bottom: 1px solid #eee;                 /* Línea divisoria inferior */
++  }
++
++  .item-galeria .descripcion {
++    width: 100%;                                   /* Texto ocupa todo el ancho */
++  }
++}
+ 
+EOF
+)
+   main
