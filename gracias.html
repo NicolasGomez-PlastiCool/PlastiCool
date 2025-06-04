@@ -61,6 +61,7 @@
     <div class="contenido-header">
       <h1 class="gagalin">PlastiCool SpA</h1>
       <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables - J&N Distribuciones Sustentables SpA.</p>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menú">&#9776;</button>
       <nav>
         <a href="index.html" class="gagalin">Inicio</a>
         <a href="productos.html" class="gagalin">Productos</a>
@@ -74,11 +75,13 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
+<div class="contenedor">
     <div class="gracias-container">
       <h1 class="gagalin">¡Gracias por tu mensaje!</h1>
       <p>Nos pondremos en contacto contigo a la brevedad.</p>
       <a href="index.html" class="boton-estandar">Ir al inicio</a>
       <a href="contacto.html" class="boton-estandar">Enviar otro mensaje</a>
+      </div>
     </div>
   </main>
 
@@ -86,6 +89,14 @@
   <footer>
     <p>© 2025 PlastiCool SpA. | Sitio en desarrollo</p>
   </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
 

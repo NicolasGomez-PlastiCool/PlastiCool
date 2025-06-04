@@ -21,6 +21,7 @@
     <div class="contenido-header">
       <h1 class="gagalin">PlastiCool SpA</h1>
       <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables - J&N Distribuciones Sustentables SpA.</p>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menú">&#9776;</button>
       <nav>
         <a href="index.html" class="gagalin">Inicio</a>
         <a href="productos.html" class="gagalin">Productos</a>
@@ -32,8 +33,15 @@
   <!-- ESPACIO PARA EL HEADER FIJO -->
   <div class="espacio-header"></div>
 
+  <!-- HERO -->
+  <section class="hero">
+    <h2 class="gagalin">Vasos reutilizables para todos tus eventos</h2>
+    <a href="contacto.html" class="btn-hero">Cotiza ahora</a>
+  </section>
+
   <!-- CONTENIDO PRINCIPAL -->
   <main>
+<div class="contenedor">
     <section>
       <h2 class="gagalin">¿Quiénes somos?</h2>
       <p class="p-body">En PlastiCool SpA nos dedicamos a la venta de vasos reciclables y reutilizables de alta calidad, fabricados en policarbonato, polipropileno y otros materiales plásticos duros. Personalizamos tus pedidos según tus necesidades.</p>
@@ -70,11 +78,20 @@
       <h2 class="gagalin">Novedades</h2>
       <p class="p-body">Muy pronto lanzaremos nuestra primera línea ecológica de vasos personalizados para eventos sustentables.</p>
     </section>
+</div>
   </main>
 
   <!-- PIE DE PÁGINA -->
   <footer>
     <p>© 2025 PlastiCool SpA. | Sitio en desarrollo</p>
   </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

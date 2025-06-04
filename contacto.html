@@ -23,8 +23,9 @@
     </div>
     <div class="contenido-header">
       <h1 class="gagalin">PlastiCool SpA</h1>
-      <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables - 
+      <p>Venta al detalle y por mayor de vasos reutilizables y reciclables personalizables -
         J&N Distribuciones Sustentables SpA.</p>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menú">&#9776;</button>
       <nav>
         <a href="index.html" class="gagalin">Inicio</a>
         <a href="productos.html" class="gagalin">Productos</a>
@@ -38,6 +39,7 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
+<div class="contenedor">
     <section>
       <h2 class="gagalin">Formulario de contacto</h2>
       <form id="form-contacto">
@@ -48,7 +50,10 @@
         <input type="email" id="correo" name="correo" required placeholder="tucorreo@example.com">
 
         <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +56 9 1234 5678" pattern="[0-9()+\s-]{7,20}">
         <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +56 9 1234 5678" pattern="[0-9+\-()\s]{7,20}">
+        
+ main
 
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje"></textarea>
@@ -56,6 +61,7 @@
         <button type="submit">Enviar consulta</button>
       </form>
     </section>
+</div>
   </main>
 
   <!-- PIE DE PÁGINA -->
@@ -89,6 +95,14 @@
       } catch (error) {
         alert('Error de red. Por favor, revisa tu conexión.');
       }
+    });
+  </script>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('show');
     });
   </script>
 </body>
