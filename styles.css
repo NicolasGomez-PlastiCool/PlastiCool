@@ -11,6 +11,11 @@ body {
 .espacio-header {
   margin-bottom: 30px;                             /* Espacio entre el header fijo y el contenido */
 }
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .gagalin {
   font-family: 'Gagalin', cursive;                 /* Fuente decorativa Gagalin */
@@ -235,4 +240,61 @@ footer p {
   font-family: 'Open Sans', sans-serif;            /* Fuente del texto */
   font-size: 1em;                                   /* Tamaño de texto */
   color: #333;                                     /* Color de texto */
+}
+
+/* --------------------- HERO --------------------- */
+.hero {
+  background: url('vaso pc 500cc.png') center/cover no-repeat; /* Imagen de fondo */
+  padding: 80px 20px;                             /* Espaciado amplio */
+  text-align: center;                             /* Contenido centrado */
+  color: #fff;                                    /* Texto blanco */
+}
+
+.btn-hero {
+  background-color: #f3e9dc;                      /* Color del botón */
+  color: #333;                                    /* Color de texto */
+  padding: 10px 20px;                             /* Espaciado */
+  text-decoration: none;                          /* Sin subrayado */
+  border-radius: 5px;                             /* Bordes redondeados */
+  font-weight: bold;                              /* Texto en negrita */
+  transition: background-color 0.3s ease;         /* Efecto al pasar */
+}
+
+.btn-hero:hover {
+  background-color: #e0d6c8;                      /* Cambio de color */
+}
+
+/* --------------------- MENÚ HAMBURGUESA --------------------- */
+.menu-toggle {
+  display: none;                                  /* Oculto en escritorio */
+  background: none;                               /* Sin fondo */
+  border: none;                                   /* Sin borde */
+  font-size: 2.5em;                               /* Icono grande */
+  cursor: pointer;                                /* Manito */
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;                                /* Oculta menú */
+    flex-direction: column;                       /* En columna */
+    background-color: #f3e9dc;                    /* Fondo */
+    position: absolute;                           /* Sobre contenido */
+    top: 100%;                                    /* Debajo del header */
+    left: 0;                                      /* Alineado a la izquierda */
+    width: 100%;                                  /* Ancho completo */
+    padding: 10px 0;                              /* Espaciado */
+    gap: 10px;                                    /* Separación */
+  }
+
+  nav.show {
+    display: flex;                                /* Muestra al activar */
+  }
+
+  .menu-toggle {
+    display: block;                               /* Visible en móvil */
+  }
+
+  .header-fijo {
+    flex-wrap: wrap;                              /* Permite saltos de línea */
+  }
 }
