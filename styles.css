@@ -1,238 +1,133 @@
-/* --------------------- ESTILOS GENERALES --------------------- */
-body {
-  font-family: 'Open Sans', sans-serif;            /* Fuente principal del sitio */
-  margin: 0;                                       /* Elimina márgenes por defecto */
-  padding: 0;                                      /* Elimina padding por defecto */
-  padding-top: 140px;                              /* Espacio para el header fijo */
-  line-height: 1.5;                                /* Altura de línea legible */
-  background-color: #f9f9f9;                       /* Color de fondo general claro */
-}
-
-.espacio-header {
-  margin-bottom: 30px;                             /* Espacio entre el header fijo y el contenido */
-}
-
-.gagalin {
-  font-family: 'Gagalin', cursive;                 /* Fuente decorativa Gagalin */
-}
-
-/* --------------------- TITULOS Y TEXTO DEL BODY --------------------- */
-h2 {
-  font-family: 'Gagalin', cursive;                 /* Fuente para subtítulos */
-  font-size: 2.8em;                                /* Tamaño grande de subtítulo */
-  color: #333;                                     /* Color gris oscuro */
-  margin: 40px 0 10px;                             /* Márgenes arriba y abajo del título */
-}
-
-.p-body {
-  font-family: 'Open Sans', sans-serif;            /* Fuente para párrafos del cuerpo */
-  font-size: 1em;                                /* Tamaño de texto legible */
-  color: #333;                                     /* Color gris oscuro */
-  margin: 10px 0 20px;                             /* Espaciado vertical */
-}
-
-/* --------------------- HEADER --------------------- */
-.header-fijo {
-  position: fixed;                                 /* Fija el header en la parte superior */
-  top: 0;                                          /* Alineación superior */
-  left: 0;                                         /* Alineación izquierda */
-  width: 100%;                                     /* Ocupa todo el ancho de la pantalla */
-  background-color: #f3e9dc;                       /* Color de fondo crema */
-  display: flex;                                   /* Usa flexbox para distribución */
-  align-items: center;                             /* Alineación vertical centrada */
-  justify-content: space-between;                 /* Espaciado entre elementos */
-  padding: 20px 30px;                              /* Espaciado interno */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);         /* Sombra sutil debajo */
-  z-index: 999;                                    /* Se asegura que esté por encima */
-  gap: 20px;                                       /* Espacio entre bloques del header */
-}
-
-.logo-container {
-  flex: 0 0 auto;                                  /* Tamaño fijo del logo */
-  margin-right: 10px;                              /* Separación del contenido */
-}
-
-.logo {
-  max-height: 130px;                               /* Altura máxima del logo */
-  height: auto;                                    /* Mantiene proporción */
-  width: auto;                                     /* Ancho automático */
-  max-width: 100%;                                 /* No excede el contenedor */
-  display: block;                                  /* Elimina espacio adicional */
-}
-
-.contenido-header {
-  flex: 1 1 auto;                                  /* Usa el espacio restante */
-  display: flex;                                   /* Flex para alinear elementos */
-  flex-direction: column;                          /* Organiza verticalmente */
-  justify-content: center;                         /* Centra el contenido */
-  text-align: center;                              /* Centra el texto */
-  min-width: 0;                                    /* Permite ajuste de contenido */
-}
-
-.contenido-header h1 {
-  margin: 0;                                       /* Sin margen extra */
-  font-size: 3.5em;                                /* Tamaño destacado del título */
-  color: #333;                                     /* Color del texto */
-  line-height: 1.1;                                /* Compacta el espaciado entre líneas */
-}
-
-.contenido-header p {
-  margin: 5px 0 0 0;                               /* Espaciado entre h1 y p */
-  font-size: 1.3em;                                /* Tamaño moderadamente grande */
-  color: #333;                                     /* Color de texto */
-  line-height: 1.2;                                /* Espaciado entre líneas más ajustado */
-}
-
-nav {
-  display: flex;                                   /* Flexbox para la barra de navegación */
-  flex: 0 0 auto;                                  /* No crece ni se encoge */
-  gap: 40px;                                       /* Espacio entre enlaces */
-  justify-content: center;                         /* Alineación horizontal centrada */
-  align-items: center;                             /* Alineación vertical centrada */
-}
-
-nav a {
-  color: black;                                    /* Color negro para enlaces */
-  text-decoration: none;                           /* Sin subrayado */
-  font-weight: bold;                               /* Negrita */
-  text-transform: uppercase;                       /* Mayúsculas */
-  font-family: 'Gagalin', cursive;                 /* Fuente decorativa */
-  font-size: 2.1em;                                /* Tamaño grande */
-  white-space: nowrap;                             /* Evita saltos de línea */
-}
-
-/* --------------------- MAIN --------------------- */
-main {
-  padding: 15px;                                   /* Espaciado general interno */
-}
-
-/* --------------------- GALERÍA --------------------- */
-.fila {
-  display: flex;                                   /* Contenedor flexible para ítems */
-  justify-content: space-between;                 /* Distribuye uniformemente */
-  gap: 20px;                                       /* Espacio entre elementos */
-  margin-top: 20px;                                /* Separación del contenido anterior */
-  flex-wrap: wrap;                                 /* Permite envolver ítems en pantallas pequeñas */
-}
-
-.item-galeria {
-  display: flex;                                   /* Usa flex para organizar imagen y texto */
-  flex-direction: row;                             /* Imagen a la izquierda, texto a la derecha */
-  background-color: #ffffff;                       /* Fondo blanco */
-  border-radius: 10px;                             /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);            /* Sombra sutil */
-  overflow: hidden;                                /* Evita desbordes */
-  width: 32%;                                      /* Ancho de cada tarjeta en escritorio */
-  min-width: 300px;                                /* No más pequeño que 300px */
-}
-
-.item-galeria img {
-  width: 50%;                                      /* La imagen ocupa la mitad del ancho */
-  object-fit: cover;                               /* Cubre todo el espacio asignado */
-  border-right: 1px solid #eee;                    /* Línea divisoria entre imagen y texto */
-}
-
-.item-galeria .descripcion {
-  width: 50%;                                      /* Mitad del espacio para el texto */
-  padding: 15px;                                   /* Espaciado interno */
-  font-size: 1em;                                  /* Tamaño estándar de texto */
-  display: flex;                                   /* Flex para organizar verticalmente */
-  flex-direction: column;                          /* Vertical */
-  justify-content: space-between;                 /* Distribuye texto y botón */
-  color: #333;                                     /* Color de texto */
-  font-family: 'Open Sans', sans-serif;            /* Fuente regular */
-  background-color: #fff;                          /* Fondo blanco */
-}
-
-.ajustar-ancho {
-  object-fit: contain;                             /* Escala la imagen sin recorte */
-  padding: 5px;                                    /* Espaciado interno */
-  background-color: #fff;                          /* Fondo blanco */
-}
-
-/* --------------------- BOTÓN DE COTIZACIÓN --------------------- */
-.btn-contacto {
-  background-color: #f3e9dc;                       /* Fondo crema */
-  color: #333;                                     /* Texto gris oscuro */
-  border: none;                                    /* Sin borde */
-  padding: 10px;                                   /* Espaciado interno */
-  text-align: center;                              /* Centrado de texto */
-  text-decoration: none;                           /* Sin subrayado */
-  font-size: 1em;                                   /* Tamaño de texto */
-  font-weight: bold;                               /* Texto en negrita */
-  border-radius: 5px;                              /* Bordes redondeados */
-  margin-top: 10px;                                /* Separación superior */
-  display: block;                                  /* Ocupa línea completa */
-  width: calc(100% - 20px);                        /* Casi todo el ancho disponible */
-  margin-right: auto;                              /* Alineación a la izquierda */
-  align-self: flex-start;                          /* Alineación dentro del contenedor */
-  transition: background-color 0.3s ease;          /* Transición suave al pasar el mouse */
-  font-family: 'Open Sans', sans-serif;            /* Fuente estándar */
-}
-
-.btn-contacto:hover {
-  background-color: #e0d6c8;                       /* Cambio de color al pasar el cursor */
-}
-
-/* --------------------- FORMULARIO --------------------- */
-form {
-  display: flex;                                   /* Flexbox para organización vertical */
-  flex-direction: column;                          /* Elementos en columna */
-  max-width: 800px;                                /* Ancho máximo del formulario */
-  margin: 30px auto;                               /* Centrado horizontal con margen vertical */
-  padding: 20px;                                   /* Espaciado interno */
-  gap: 20px;                                       /* Espacio entre campos */
-  background-color: #fff;                          /* Fondo blanco */
-  border-radius: 10px;                             /* Bordes redondeados */
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);            /* Sombra ligera */
-}
-
-label {
-  font-size: 1.5em;                                /* Tamaño de etiqueta */
-  color: #333;                                     /* Color de texto */
-  margin-bottom: 5px;                              /* Espacio inferior */
-  font-family: 'Open Sans', sans-serif;            /* Fuente estándar */
-}
-
-input, textarea {
-  padding: 10px;                                   /* Espaciado interno */
-  font-size: 1.1em;                                /* Tamaño de fuente */
-  width: 100%;                                     /* Ocupa todo el ancho */
-  border: 1px solid #ccc;                          /* Borde gris claro */
-  border-radius: 5px;                              /* Bordes redondeados */
-  font-family: 'Open Sans', sans-serif;            /* Fuente estándar */
-  box-sizing: border-box;                          /* Incluye padding y border en el ancho */
-}
-
-textarea {
-  resize: vertical;                                /* Permite redimensionar verticalmente */
-}
-
-button {
-  background-color: #f3e9dc;                       /* Fondo crema */
-  color: #333;                                     /* Color de texto */
-  border: none;                                    /* Sin borde */
-  padding: 12px 20px;                              /* Espaciado interno */
-  font-size: 1em;                                   /* Tamaño de texto */
-  cursor: pointer;                                 /* Cursor tipo botón */
-  border-radius: 5px;                              /* Bordes redondeados */
-  font-family: 'Open Sans', sans-serif;            /* Fuente */
-  transition: background-color 0.3s ease;          /* Transición suave */
-}
-
-button:hover {
-  background-color: #e0d6c8;                       /* Color al pasar el cursor */
-}
-
-/* --------------------- FOOTER --------------------- */
-footer {
-  background-color: #eee;                          /* Fondo gris claro */
-  text-align: center;                              /* Texto centrado */
-  padding: 10px;                                   /* Espaciado interno */
-}
-
-footer p {
-  font-family: 'Open Sans', sans-serif;            /* Fuente del texto */
-  font-size: 1em;                                   /* Tamaño de texto */
-  color: #333;                                     /* Color de texto */
-}
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/styles.css b/styles.css
+index f2670fa73a278aa16763f6028fd030e2831b66e1..87cfc77cb281715976811c50c3fc4e3f02e08daf 100644
+--- a/styles.css
++++ b/styles.css
+@@ -1,39 +1,67 @@
+ /* --------------------- ESTILOS GENERALES --------------------- */
+ body {
+   font-family: 'Open Sans', sans-serif;            /* Fuente principal del sitio */
+   margin: 0;                                       /* Elimina márgenes por defecto */
+   padding: 0;                                      /* Elimina padding por defecto */
+   padding-top: 140px;                              /* Espacio para el header fijo */
+   line-height: 1.5;                                /* Altura de línea legible */
+   background-color: #f9f9f9;                       /* Color de fondo general claro */
+ }
+ 
+ .espacio-header {
+   margin-bottom: 30px;                             /* Espacio entre el header fijo y el contenido */
+ }
+ 
++/* --------------------- HERO --------------------- */
++.hero {
++  background: linear-gradient(135deg, #64b3f4, #c2e59c); /* Fondo degradado */
++  color: #fff;                                   /* Texto blanco */
++  text-align: center;                             /* Centrado de contenido */
++  padding: 80px 20px;                             /* Espaciado generoso */
++}
++
++.hero h2 {
++  font-size: 3em;                                /* Título grande */
++  margin: 0 0 20px;                              /* Espacio inferior */
++}
++
++.btn-hero {
++  background-color: #f3e9dc;                     /* Fondo crema */
++  color: #333;                                   /* Texto gris oscuro */
++  padding: 12px 25px;                            /* Espaciado interno */
++  text-decoration: none;                         /* Sin subrayado */
++  font-weight: bold;                             /* Negrita */
++  border-radius: 5px;                            /* Bordes redondeados */
++  display: inline-block;                         /* Mantiene tamaño contenido */
++  transition: background-color 0.3s ease;        /* Efecto hover */
++}
++
++.btn-hero:hover {
++  background-color: #e0d6c8;                     /* Cambio al pasar el cursor */
++}
++
+ .gagalin {
+   font-family: 'Gagalin', cursive;                 /* Fuente decorativa Gagalin */
+ }
+ 
+ /* --------------------- TITULOS Y TEXTO DEL BODY --------------------- */
+ h2 {
+   font-family: 'Gagalin', cursive;                 /* Fuente para subtítulos */
+   font-size: 2.8em;                                /* Tamaño grande de subtítulo */
+   color: #333;                                     /* Color gris oscuro */
+   margin: 40px 0 10px;                             /* Márgenes arriba y abajo del título */
+ }
+ 
+ .p-body {
+   font-family: 'Open Sans', sans-serif;            /* Fuente para párrafos del cuerpo */
+   font-size: 1em;                                /* Tamaño de texto legible */
+   color: #333;                                     /* Color gris oscuro */
+   margin: 10px 0 20px;                             /* Espaciado vertical */
+ }
+ 
+ /* --------------------- HEADER --------------------- */
+ .header-fijo {
+   position: fixed;                                 /* Fija el header en la parte superior */
+   top: 0;                                          /* Alineación superior */
+   left: 0;                                         /* Alineación izquierda */
+   width: 100%;                                     /* Ocupa todo el ancho de la pantalla */
+diff --git a/styles.css b/styles.css
+index f2670fa73a278aa16763f6028fd030e2831b66e1..87cfc77cb281715976811c50c3fc4e3f02e08daf 100644
+--- a/styles.css
++++ b/styles.css
+@@ -214,25 +242,52 @@ button {
+   border: none;                                    /* Sin borde */
+   padding: 12px 20px;                              /* Espaciado interno */
+   font-size: 1em;                                   /* Tamaño de texto */
+   cursor: pointer;                                 /* Cursor tipo botón */
+   border-radius: 5px;                              /* Bordes redondeados */
+   font-family: 'Open Sans', sans-serif;            /* Fuente */
+   transition: background-color 0.3s ease;          /* Transición suave */
+ }
+ 
+ button:hover {
+   background-color: #e0d6c8;                       /* Color al pasar el cursor */
+ }
+ 
+ /* --------------------- FOOTER --------------------- */
+ footer {
+   background-color: #eee;                          /* Fondo gris claro */
+   text-align: center;                              /* Texto centrado */
+   padding: 10px;                                   /* Espaciado interno */
+ }
+ 
+ footer p {
+   font-family: 'Open Sans', sans-serif;            /* Fuente del texto */
+   font-size: 1em;                                   /* Tamaño de texto */
+   color: #333;                                     /* Color de texto */
+ }
++
++/* --------------------- RESPONSIVE --------------------- */
++@media (max-width: 768px) {
++  nav {
++    flex-direction: column;                        /* Menú vertical */
++    gap: 20px;                                     /* Separación entre enlaces */
++  }
++
++  nav a {
++    font-size: 1.5em;                              /* Tamaño menor */
++  }
++
++  .item-galeria {
++    flex-direction: column;                        /* Apila imagen y texto */
++    width: 100%;                                   /* Ocupa todo el ancho */
++  }
++
++  .item-galeria img {
++    width: 100%;                                   /* Imagen completa */
++    border-right: none;                            /* Sin división lateral */
++    border-bottom: 1px solid #eee;                 /* Línea divisoria inferior */
++  }
++
++  .item-galeria .descripcion {
++    width: 100%;                                   /* Texto ocupa todo el ancho */
++  }
++}
+ 
+EOF
+)
